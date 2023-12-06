@@ -8,11 +8,15 @@ use std::time::SystemTime;
 use rand::Rng;
 
 
+/**
+ * This is a simple demo of the performance of SDL2 in Rust.
+ */
+
 
 static SCREEN_WIDTH: u32 = 1920;
 static SCREEN_HEIGHT: u32 = 1080;
-static G: f64 = 0.000000011;
-static SUN_MASS: f64 = 32000000.0;
+static G: f64 = 0.000000011; // gravitational constant
+static SUN_MASS: f64 = 32000000.0; // mass of the sun
 static SPEED: f64 = 100.0;
 
 // handle the annoying Rect i32
