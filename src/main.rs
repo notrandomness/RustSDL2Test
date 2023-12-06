@@ -26,6 +26,7 @@ macro_rules! rect(
     )
 );
 
+// Orb struct
 struct Orb {
     x: f64,
     y: f64,
@@ -35,6 +36,7 @@ struct Orb {
     circle: Vec<(i32, i32)>,
 }
 
+// generate random i32
 fn rand_i32() -> i32 {
     let mut rng = rand::thread_rng();
     rng.gen()
