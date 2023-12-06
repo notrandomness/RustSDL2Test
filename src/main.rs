@@ -13,8 +13,8 @@ use rand::Rng;
  */
 
 
-static SCREEN_WIDTH: u32 = 1920; // screen width
-static SCREEN_HEIGHT: u32 = 1080; // screen height
+static SCREEN_WIDTH: u32 = 1920;
+static SCREEN_HEIGHT: u32 = 1080;
 static G: f64 = 0.000000011; // gravitational constant
 static SUN_MASS: f64 = 32000000.0; // mass of the sun
 static SPEED: f64 = 100.0;
