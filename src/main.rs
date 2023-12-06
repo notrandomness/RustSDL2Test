@@ -13,8 +13,8 @@ use rand::Rng;
  */
 
 
-static SCREEN_WIDTH: u32 = 1920;
-static SCREEN_HEIGHT: u32 = 1080;
+static SCREEN_WIDTH: u32 = 1920; //screen width
+static SCREEN_HEIGHT: u32 = 1080;  //screen height
 static G: f64 = 0.000000011; // gravitational constant
 static SUN_MASS: f64 = 32000000.0; // mass of the sun
 static SPEED: f64 = 100.0;
@@ -26,6 +26,7 @@ macro_rules! rect(
     )
 );
 
+// Orb struct
 struct Orb {
     x: f64,
     y: f64,
@@ -35,6 +36,7 @@ struct Orb {
     circle: Vec<(i32, i32)>,
 }
 
+// generate random i32
 fn rand_i32() -> i32 {
     let mut rng = rand::thread_rng();
     rng.gen()
